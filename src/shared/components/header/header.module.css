@@ -1,0 +1,134 @@
+.header {
+    background-color: var(--darkBlue);
+    padding: 1.8rem 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerWrapper {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.avatarContainer {
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+.avatar {
+    text-align: center;
+    position: relative;
+}
+
+.listItem {
+    width: 16px;
+    height: 16px;
+}
+
+.logo {
+    width: 25px;
+}
+
+.login {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 3rem;
+}
+
+.userLogout {
+    color: var(--grey);
+    width: 24px;
+    font-size: 1.6rem;
+    border: 2px solid var(--grey);
+    border-radius: 100%;
+    position: relative;
+    left: -2px;
+}
+
+@media screen and (min-width:768px) {
+
+    .headerWrapper {
+        padding: 2.4rem 2.4rem 0;
+        background-color: var(--black);
+    }
+
+    .header {
+        padding: 2.4rem 2.4rem 2.2rem;
+    }
+
+    .logo, .listItem {
+        width: auto;
+    }
+
+    .avatarContainer {
+        width: 32px;
+        height: 32px;
+        display: block;
+    }
+
+    .login {
+        position: absolute;
+        top: 5px;
+        left: -60px;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .login:hover {
+        cursor: pointer;
+    }
+
+    .userLogout {
+        width: 32px;
+        font-size: 2.1rem;
+        left: 0;
+    }
+    
+    .listItem:hover {
+        cursor: pointer;
+        filter: brightness(0) saturate(100%) invert(58%) sepia(57%) saturate(6669%) hue-rotate(333deg) brightness(97%) contrast(106%);
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    .headerWrapper {
+        position: relative;
+        width: auto;
+        padding: 0;
+    }
+
+    .header {
+        height: 96rem;
+        padding: 3.5rem 3.2rem;
+        flex-direction: column;
+    }
+
+    .list {
+        flex-direction: column;
+        position: absolute;
+        top: 136px;
+        gap: 4rem;
+    }
+
+    .avatarContainer {
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+    .login {
+        top: 45px;
+        left: -5px;
+    }
+}

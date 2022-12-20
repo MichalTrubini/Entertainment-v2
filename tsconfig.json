@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.jsx", "pages/_app.jsx", "pages/_document.jsx", "pages/api/bookmarkHandler.js", "src/modules/recommendationModule.jsx", "src/shared/components/videoItem.jsx", "src/shared/components/header/header.jsx", "src/shared/layout/layout.jsx"],
+  "exclude": ["node_modules"]
+}
