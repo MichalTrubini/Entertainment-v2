@@ -124,6 +124,10 @@ input:-webkit-autofill:focus {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.imageObjectFit {
+  object-fit: cover;
+}
+
 .dotWindmillContainer {
   position: absolute;
   top: 50%;
